@@ -1,4 +1,4 @@
 #!/bin/sh
 
-echo $NAME
+echo $USERNAME
 echo fool
