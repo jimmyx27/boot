@@ -1,5 +1,7 @@
 package foo
 
-import (
-	"fmt"
-)
+type bar interface {
+	SayHello()
+}
+
+type foo struct{}
