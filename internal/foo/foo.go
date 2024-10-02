@@ -4,4 +4,6 @@ type bar interface {
 	SayHello()
 }
 
-type foo struct{}
+type foo struct {
+	bar bar
+}
