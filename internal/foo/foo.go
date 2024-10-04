@@ -13,3 +13,7 @@ func NewFoo(bar bar) *Foo {
 		bar: bar,
 	}
 }
+
+func (f *Foo) Greet() {
+	f.bar.SayHello()
+}
