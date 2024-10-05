@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	bar := &bar.bar{}
+	bar := &bar.Bar{}
 	foo := foo.NewFoo(bar)
 
 	foo.Greet()
