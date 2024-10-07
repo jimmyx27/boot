@@ -22,3 +22,10 @@ func (l *Logger) Flush() []string {
 	l.msgs = []string{}
 	return msgsCopy
 }
+
+func (l *Logger) Debug(msg string) {
+	l.msgs = append(l.msgs, msg)
+	if l.logToConsole {
+		fmt.Printf("[%s] %s \n", "DEBUG", msg)
+	}
+}
