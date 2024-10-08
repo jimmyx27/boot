@@ -29,3 +29,10 @@ func (l *Logger) Debug(msg string) {
 		fmt.Printf("[%s] %s \n", "DEBUG", msg)
 	}
 }
+
+func (l *Logger) Error(err error) {
+	l.msgs = append(l.msgs, err.Error())
+	if l.logToConsole {
+		fmt.Printf("[%s] %s \n", "ERROR", err.Error())
+	}
+}
